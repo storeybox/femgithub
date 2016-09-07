@@ -31,7 +31,7 @@ export default Router.extend({
   },
 
   repos () {
-    this.renderPage(<ReposPage/>, {layout: true})
+    this.renderPage(<ReposPage repos={app.me.repos}/>, {layout: true})
   },
 
   login () {
